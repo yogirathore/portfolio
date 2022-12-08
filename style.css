@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'Migra';
+    src: url(font/Migra/Migra-Extrabold.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #000000 !important;
+    font-family: Roboto;
+}
+#nav{
+    font-family: "Migra", sans-serif;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    color: white;
+}
+.nav_box{
+    padding: 2rem 0;
+}
+.nav_line{
+    background: #d5d0ba;
+    margin: 0;
+}
+.title{
+    text-align: center;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+    color:#fff!important;
+}
+.menu li{
+    list-style-type: none;
+    margin-right:10px ;
+}
+.title_div{
+    display: flex;
+    align-items: center;
+}
+.title_menu{
+    display:flex ;
+    align-items: center;
+    justify-content: flex-end;
+}
+#header{
+    padding: 9rem 0;
+}
+.intro_box{
+    border: solid #d5d0ba;
+    position:relative;
+    height:65vh;
+    width:100%;
+    z-index: 10 !important;
+}
+.intro_box::after {
+    content:"";
+    border:solid #d5d0ba;
+    position:absolute;
+    top:1rem;
+    left:1rem;
+    height:inherit;
+    width:100%;
+    z-index: 1 !important;
+}
+.intro_text{
+    position: relative;
+    z-index: 100;
+    top:1rem;
+    left:1.2rem;
+    color:#d5d0ba;
+    padding: 10px;
+}
+.first_line{
+    display: flex;
+    justify-content: space-between;
+}
+.scnd_line p{
+    font-weight: bold;
+}
+.scnd_line{
+    display: flex;
+    justify-content: space-between;
+}
+.and{
+    font-family:Migra ;
+    margin-right:5px ;
+}
+.fourth_line{
+    display: flex;
+}
+.fifth_line{
+    font-weight: bold;
+    display: flex;
+}
+#about_me{
+    padding: 2rem;
+    background-color: #d5d0ba;
+}
+.grid_box{
+    height:21rem;
+    background: url(images/design/line.png);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abt{
+    overflow: hidden;
+}
+.abt h1{
+    font-family: Migra;
+    font-size: 5rem;
+    color: black;
+    line-height: 68px;
+    margin: 0;
+}
+.about_box{
+    display: flex;
+    flex-direction: column;
+}
+.abt_content{
+    color:white;
+}
+.abt_content a{
+    color:#0a0a0a !important;
+    transition:ease 0.3s;
+}
+.abt_content a:hover{
+    margin-left:2rem;
+}
+#about_me .col-lg-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img_box{
+    width: 30rem;
+    z-index: 200;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 8px 10px 0 rgb(0 0 0 / 50%);
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
+#work{
+    padding:2rem;
+    background-color: #0a0a0a;
+    color:#d5d0ba;
+    font-family: Migra;
+}
+.work_img{
+    position: relative;
+}
+.hover_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    opacity: 0;
+    cursor: pointer;
+}
+.work_img:hover .btn img{
+    opacity: 0.3;
+}
+.work_img:hover .hover_text{
+    opacity: 1;
+}
+.work_title{
+    display: flex;
+    align-items: center;
+}
+.main_work_text{
+    overflow: hidden;
+}
+.main_work_text h2{
+    font-family: Roboto;
+}
+#work .col-6{
+    display: flex;
+    align-items: center;
+}
+.right_box{
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+a img{
+    filter: grayscale(100%);
+    transition: .5s ease;
+}
+#contact{
+    padding: 2rem;
+    background-color: #d5d0ba;
+}
+.grid_box2{
+    background: url(images/design/line.png);
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Migra;
+}
+.grid_box2 h1{
+    font-size: 4rem;
+    z-index: 250;
+}
+.con_details h1{
+    font-family: Migra;
+}
+.con_details p{
+    font-family: Roboto;
+    font-weight: bold;
+}
+.left_box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+#footer_line{
+    padding: 2rem;
+    background-color: #000;
+}
+.stars{
+    height: 2rem;
+    margin-top: 0.3rem;
+
+}
+.star_2{
+    height:8rem;
+}
+.wrk_star{
+    width:2.5rem;
+}
+.modal_box{
+    padding: 1rem;
+    background-color: #272727;
+    border-radius: 1rem;
+    z-index: 1;
+    color: #000;
+}
+.modal{
+    padding: 2rem;
+    z-index: 10;
+}
+.modal_heading{
+    margin-bottom: 1rem;
+    display: flex;
+}
+.cmpny_name{
+    color: #fff;
+    font-family: Roboto;
+    margin-bottom:1rem ;
+    display: flex;
+    justify-content: space-between;
+}
+.cmpny_head{
+    display: flex;
+    align-items: center;
+}
+.logo_img{
+    width:3rem;
+    margin-right: 1rem;
+}
+.cmpny_head img{
+    object-fit: contain;
+    width:100%;
+}
+.head_img{
+    width: 2rem;
+}
+.head_img img{
+    object-fit: contain;
+    width: 100%;
+}
+.case_str{
+    width: 2rem;
+}
+.case_dis{
+    font-family: Roboto;
+    color: #fff;
+}
+.btn{
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+a{
+    border:0px !important;
+}
+.heading_phase1 p{
+    font-family: Roboto;
+    font-weight: bold;
+    color:#fff;
+}
+.example-open .modal-backdrop {
+    background-color:red;
+}
+.case_study_box{
+    margin-bottom:1rem;
+}
+.modal_box h6{
+    color: #d5d0ba;
+}
+.phase_1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content_phase1{
+    font-family: Roboto;
+    color: #fff;  
+}
+.design_phase{
+    padding: 1rem 0;
+}
+.design_head hr{
+    margin-top: 0;
+    background-color: #d5d0ba;
+}
+.design_subhead{
+    font-family: Roboto;
+    font-weight: bold;
+    color:#fff;
+    display: flex;
+}
+.design_str{
+    width: 1.5rem;
+    padding:0 4px;
+}
+.colors_area{
+    font-family: Roboto;
+}
+.color_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.ss_red{
+    color: #b80f16;
+}
+.color{
+    border-radius: 100%;
+    width: 6.3rem;
+    padding: 0.8rem;
+    border: solid 0.8rem #b80f16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner_color{
+    background: #b80f16;
+    padding: 1.6rem;
+    border-radius: 100%;
+}
+.live{
+    display: flex;
+    align-items: center;
+}
+.live:hover h6 {
+    color: #fff;
+}
+.live:hover i{
+    color: #fff;
+}
+.live h6{
+    color: #d5d0ba;
+    font-family: Roboto;
+    margin: 0 0.3rem 0 0;
+    transition: .3s ease;
+}
+.live i{
+    color: #d5d0ba;
+    font-size: 14px;
+    transition: .3s ease;
+}
+.case_line hr{
+    margin-top: 0;
+    background-color: #d5d0ba;
+}
+.abt_org{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image_box{
+    overflow: hidden;
+}
+.vdo{
+    z-index: -1;
+    width: 40vw;
+}
+.back_vid{
+    width: 100%;
+}
+@media(max-width:991px) {
+    .left_box{
+        display: none;
+    }
+    .title_box{
+        visibility: hidden;
+        font-size: 1px;
+    }
+    .vdo{
+        width: 100vw;
+    }
+    
+}
+
+@media (max-width:768px){
+    #nav{
+        padding: 1rem;
+    }
+    
+    
+    .heading{
+        font-size: 0.8rem;
+    }
+    .left_box{
+        display: none;
+    }
+    .right_box{
+        margin-bottom: 1rem;
+    }
+    .abt h1{
+        font-size: 3rem;
+    }
+    .abt_content h5{
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .intro_box{
+        height: 50vh;
+    }
+    .intro_box h1{
+        font-size: 1.5rem;
+    }
+    .intro_box p{
+        font-size: 0.8rem;
+    }
+    .con_details h1{
+        font-size: 1rem;
+    }
+    .con_details p{
+        font-size: 0.8rem;
+    }
+    .cont_me h1{
+        font-size: 3rem;
+    }
+    .grid_box2{
+        height: auto;
+    }
+}
